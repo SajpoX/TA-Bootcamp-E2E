@@ -19,5 +19,5 @@ Scenario: Internet shop logo button
 5. Check that the main page opened
 
 ## Running the tests
-- run the command `yarn install` in the root path of the repository package.
-- run the command `yarn run wdio` in the root path of the repository package.
+- run the command `npm install` in the root path of the repository package.
+- run the command `npm run wdio` in the root path of the repository package.
