@@ -22,12 +22,11 @@ Then("I see at leasts one item is searched", async () => {
         () => browser.execute(() => document.readyState === 'complete'),
         {
           timeout: 3000,
-          timeoutMsg: 'The page has not load for 3 seconds'
+          timeoutMsg: 'The page has not loaded for 3 seconds'
         }
       );
     const list = await $('#app > div.page-content > section > div > div > div.row-body > div > div > div > div.row-body > div.row-body-inner > div.list-wrap > div:nth-child(3)');
     await expect(list).toBeDisplayed({message: "No results were displayed"});
-    // await list.waitForDisplayed({ timeout: 4000, timeoutMsg: "No results were displayed" });
 });
 
 When("I click on the to 'Today's Best Deals' tab and then I click on the Internet shop logo", async () => {
@@ -36,7 +35,7 @@ When("I click on the to 'Today's Best Deals' tab and then I click on the Interne
         () => browser.execute(() => document.readyState === 'complete'),
         {
           timeout: 3000,
-          timeoutMsg: 'The page has not load for 3 seconds'
+          timeoutMsg: 'The page has not loaded for 3 seconds'
         }
       );
     await $('#app > header > div.page-content-inner > div:nth-child(1) > div.section-left.auto-flex > div.header2021-logo').click();
